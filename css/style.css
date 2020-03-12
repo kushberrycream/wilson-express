@@ -113,6 +113,7 @@ a:hover {
   color: #fff;
   text-align: center;
   font-size: 24px;
+  z-index: 2000;
 }
 
 .scrolltop:hover,
@@ -606,10 +607,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .cta-terms {
     color: #013e7f;
 }
-
-.cta .btn-ghost {
-  position: relative;
-  top: 13px;
+.cta-centered {
+    margin: auto; 
 }
 
 /* ==================================================
