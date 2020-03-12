@@ -603,6 +603,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
   opacity: .75;
 }
+.cta-terms {
+    color: #013e7f;
+}
 
 .cta .btn-ghost {
   position: relative;

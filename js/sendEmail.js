@@ -1,5 +1,5 @@
 function sendMail(contactForm) {
-    emailjs.send("wilsons", "account", {
+    emailjs.send("wilsons", "acount", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.email.value,
         "from_tel": contactForm.telephone.value,
@@ -8,11 +8,12 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
-            alert("Sent Successfully");
+            document.getElementById("sendmessage").style.display ="block";
+            
         },
         function(error) {
             console.log("FAILED", error);
-            alert("Send Failure");
+            document.getElementById("errormessage").style.display ="block";
         });
     return false;
 }
